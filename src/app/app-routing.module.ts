@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'animacion1',
+    loadChildren: () => import('./pages/animacion1/animacion1.module').then( m => m.Animacion1PageModule)
+  },
 ];
 
 @NgModule({
