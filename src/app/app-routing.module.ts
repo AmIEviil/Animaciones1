@@ -14,7 +14,19 @@ const routes: Routes = [
   {
     path: 'animacion1',
     loadChildren: () => import('./pages/animacion1/animacion1.module').then( m => m.Animacion1PageModule)
+  },  {
+    path: 'animacion2',
+    loadChildren: () => import('./pages/animacion2/animacion2.module').then( m => m.Animacion2PageModule)
   },
+  {
+    path: 'animacion3',
+    loadChildren: () => import('./pages/animacion3/animacion3.module').then( m => m.Animacion3PageModule)
+  },
+  {
+    path: 'animacion4',
+    loadChildren: () => import('./pages/animacion4/animacion4.module').then( m => m.Animacion4PageModule)
+  },
+
 ];
 
 @NgModule({
