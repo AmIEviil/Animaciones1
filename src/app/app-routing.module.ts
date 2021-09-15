@@ -26,6 +26,14 @@ const routes: Routes = [
     path: 'animacion4',
     loadChildren: () => import('./pages/animacion4/animacion4.module').then( m => m.Animacion4PageModule)
   },
+  {
+    path: 'codigo-qr',
+    loadChildren: () => import('./pages/codigo-qr/codigo-qr.module').then( m => m.CodigoQRPageModule)
+  },
+  {
+    path: 'tabs',
+    loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
+  },
 
 ];
 
